@@ -30,4 +30,11 @@ public class UserService implements UserServiceInterface {
         return userRepository.findByCandidatesIdCompanyId(companyId);
     }
 
+    public User save(User user) {
+        return this.userRepository.save(user);
+    }
+
+    public List<User> findAll() {
+        return this.userRepository.findAll();
+    }
 }
